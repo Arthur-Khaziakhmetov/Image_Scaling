@@ -39,7 +39,7 @@ function getResizedImagePath(
 
     $new_image=imagecreatetruecolor($width,$height);
     $white=imagecolorallocate($new_image,255,255,255);
-    $new_image=imagecreatetruecolor($width,$height);
+    //$new_image=imagecreatetruecolor($width,$height); 
     imagefilledrectangle($new_image,0,0,$width,$height,$white);
     $pastex = floor(($width - $newimageWidth) / 2);
     $pastey = floor(($height - $newimageHeight) / 2);
